@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>GamesGPT | Fortune Rabbit</title>
+		<link rel="icon" href="../imagens/favicon.png" type="image/x-icon" />
+
+		<link rel="stylesheet" href="../estilos/styles.css" />
+		<link rel="stylesheet" href="../estilos/tiger.css" />
+		<link rel="stylesheet" href="../estilos/layout.css" />
+		<link
+			href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+			rel="stylesheet"
+		/>
+	</head>
+	<body>
+		<div class="container rabbit">
+			<div class="content-rabbit">
+				<div class="floating-button pulse" id="floatingButton">
+					IDENTIFICAR SINAL </br><span id="countdown"></span>
+			</div>
+				<div class="sending">Identificando...</div>
+				<div class="container-result">
+					<div class="enter">Entre em: <span id="time-to-play"></span></div>
+					<div class="play">
+						<span class="times-span"><span id="times-to-play"></span>x</span>
+						Normal
+					</div>
+					<div class="play">
+						<span class="times-span"
+							><span id="times-to-play-turb"></span>x</span
+						>
+						Turbo
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="iframe-container">
+			<div class="spinner-container">
+				Carregando casa...
+				<div class="spinner"></div>
+			</div>
+			<iframe
+				class="iframe-embed"
+				id="iframe-rabbit"
+				src="rabbit.html"
+				frameborder="0"
+			></iframe>
+		</div>
+
+		<div class="notify" onclick="notifyMe()">
+			<svg
+				xmlns="http://www.w3.org/2000/svg"
+				width="30"
+				height="30"
+				viewBox="0 0 24 24"
+				style="fill: #ffffff"
